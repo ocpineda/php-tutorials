@@ -23,10 +23,13 @@ include_once 'anotherclass.php';
   <div id="myDiv">Click the button to load results</div>
 
   <div>
+    <br />
     <?php 
     $anotherClass = new anotherClass();
-    echo $anotherClass->printAnotherClass();
+    echo $anotherClass->printAnotherClass()."<br />";
+
     ?>
+
 
   </div>
 </body>

@@ -2,10 +2,11 @@
 
 class AnotherClass {
 
-	public $printThis = "I am in AnotherClass";
+	public $ac_string = "I am in AnotherClass";
 
 	public function printAnotherClass()
 	{
-		return $this->printThis;
+		return $this->ac_string;
 	}
+
 }

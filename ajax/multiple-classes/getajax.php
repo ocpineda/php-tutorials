@@ -9,17 +9,22 @@ public static function getButtonValue() {
     	$buttonPHP = $_REQUEST['selectedButtonValue'];
      	echo "Value button is ". $buttonPHP."<br />";
      	
-     	echo GetAjax::printThis($buttonPHP)." This is in getButtonValue()<br />";
-     	echo UpdatedString::printMe($buttonPHP);
+     	//
+     	GetAjax::printThis($buttonPHP)." This is in getButtonValue()<br />";
+     	
+     	UpdatedString::printMe($buttonPHP);
   	}
 }
 
+
 public static function printThis($str)  
 {
-	return "Hey I am printThis() in GetAjax! ".$str."<br />";
+	return "I am printThis() in class GetAjax! ".$str;
 }
 
 }
+
+
 
 GetAjax::getButtonValue();
 
